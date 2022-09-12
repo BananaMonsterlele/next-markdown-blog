@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Fraunces:opsz,wght@9..144,100&family=Inconsolata:wght@500;600;700&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+@layer components {
+  .btn {
+    @apply inline-block bg-slate-100 text-black border-none px-4 py-2 mb-2 rounded cursor-pointer no-underline font-[inherit] text-base focus:outline-none;
+  }
+
+  p {
+    @apply mx-0 my-4 leading-relaxed;
+  }
+
+  a {
+    @apply no-underline cursor-pointer text-[#333];
+  }
+
+  img {
+    @apply w-full rounded-xl;
+  }
+
+  header {
+    @apply bg-black text-white p-1 mb-10 flex;
+  }
+
+  header a {
+    @apply text-white text-3xl;
+  }
+
+  .main-container {
+    font-family: 'Alice', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .main-container_dark {
+    @apply bg-[#1b1c22] text-[#d3d3d3];
+    font-family: 'Alice', serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .main-container_dark a {
+    @apply text-[#68E1CD];
+  }
+
+  .post-body ul, ol {
+    @apply text-[100%] leading-loose font-bold mx-0 my-2.5; 
+  }
+
+  .post-body pre {
+    @apply bg-[#f4f4f4] p-5 mx-0 my-5 leading-loose;
+  }
+
+  .post-body a {
+    @apply font-bold;
+  }
+
+  .post-body a:hover {
+    @apply underline;
+  }
+}
